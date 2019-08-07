@@ -1,0 +1,30 @@
+body {
+    background: #293844;
+}
+
+.back_animation {
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 15px 35px -5px rgba(0,0,0,.75);
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 10%;
+}
+
+.my_animation{
+    background: #9791A0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes myanimation {
+    0% {background-color: white; left:0px; top:0px;border-radius: 0 0 0 0;}
+    25% {background-color: #D8AEAE; left:300px; top:0px;border-radius: 50% 0 0 0;}
+    50% {background-color: #FBDAC3; left:300px; top:300px;border-radius: 50% 50% 0 0;}
+    75% {background-color: #9791A0; left:0px; top:300px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: white; left:0px; top:0px;border-radius: 50% 50% 50% 50%;}
+}
